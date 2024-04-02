@@ -1,0 +1,22 @@
+label{
+    font-size: x-small;
+}
+form .flex{
+    @include flex(flex,null,null,null,column);
+    width: 100%;
+    
+    input,
+    button {
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid hsl(231, 7%, 60%);
+    }
+    input{
+        margin-top: .5em;
+    }
+    button{
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        margin: 1rem 0;
+    }
+  }

@@ -1,0 +1,13 @@
+@mixin flex(
+    $disp:flex,
+    $align:null,
+    $just:null,
+    $flexG:null,
+    $flexDir:null
+    ){
+    display: $disp;
+    align-items: $align;
+    justify-content: $just;
+    flex-grow: $flexG;
+    flex-direction: $flexDir;
+}
