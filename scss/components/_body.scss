@@ -1,15 +1,48 @@
-main{
-    width: 90%;
-    margin: auto;
-    .flex{
-        @include flex(flex);
-        width: 90%;
-        svg{
-            margin-right: 1rem;
+body{
+    @media(min-width: 430px){
+        background-color: hsl(235, 18%, 26%);
+        display: grid;
+        place-items: center;
+        height: 100dvh;
+    }
+    main{
+        background-color: hsl(0, 0%, 100%);
+        @media(min-width: 430px){
+            border-radius: 10px;
+            padding: 1rem;
+            display: flex;
+            // width: 100%;
+            #mobile-svg-cont svg{
+                display: none;
+            }
         }
-        p {
-            margin-top: 0;
-            color: hsl(234, 29%, 20%)
+        #content-container{
+            width: 90%;
+            margin:auto;
+        }
+        .flex{
+            @include flex(flex);
+            svg{
+                margin-right: 1rem;
+            }
+            p {
+                margin-top: 0;
+                color: hsl(234, 29%, 20%)
+            }
+        }
+        #desktop-svg-cont{
+            display: none;
+            @media(min-width:430px){
+                display: block;
+                border-radius: 10px;
+                height: 400px;
+                width: 400px;
+            }
         }
     }
-}
+    // svg{
+    //     width: 100%;
+    //     height: 100%;
+    // }
+   
+} 
