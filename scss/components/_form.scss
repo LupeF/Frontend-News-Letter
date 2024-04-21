@@ -5,7 +5,6 @@ form{
     }
     .flex{
         @include flex(flex,null,null,null,column);
-        // width: 100%;
         input,
         button {
           padding: 1rem;
@@ -14,6 +13,12 @@ form{
         }
         input{
             margin-top: .5em;
+            &:required{
+                background-color: white;
+            }
+            &:required:invalid{
+                border: solid red 1px;
+            }
         }
         button{
             background-color: hsl(234, 29%, 20%);

@@ -4,21 +4,24 @@ body{
         display: grid;
         place-items: center;
         height: 100dvh;
+        position: relative;
+
     }
     main{
         margin: auto;
         background-color: hsl(0, 0%, 100%);
-        @media(min-width: 768px){
-            border-radius: 40px;
+        @media(min-width: 650px){
             padding: 1rem;
-            display: flex;
-            #mobile-svg-cont img{
-                display: none;
-            }
+            border-radius: 40px;
+            @include flex(flex,null,null,null,row-reverse);
+            
         }
-        #mobile-svg-cont img{
+        #mobile-svg-cont img  {
             width: 100%;
-            height: 300px;
+            height: 260px;
+            @media(min-width: 650px){
+                height: 100%;
+            }
         }
         #content-container{
             width: 90%;
@@ -35,7 +38,6 @@ body{
                     font-size: 55px;
                 }
             }
-            
         }
         .flex{
             @include flex(flex);
@@ -45,14 +47,6 @@ body{
             p {
                 margin-top: 0;
                 color: hsl(234, 29%, 20%)
-            }
-        }
-        #desktop-svg-cont{
-            display: none;
-            @media(min-width:768px){
-                display: block;
-                border-radius: 10px;
-                padding-left: 1em;
             }
         }
     }

@@ -3,7 +3,8 @@ section{
     place-items: center;
     width: 50%;
     #success-msg{
-        width: 60%;
+        width: 50%;
+        max-width: 50%;
         background-color: hsl(0, 0%, 100%);
         padding: 10em 2em 2.5em;
         h1{

@@ -20,7 +20,9 @@
 <body>
 <main>
   <div id="mobile-svg-cont">
-    <img src="assets/images/illustration-sign-up-desktop.svg" alt="#">  </div>
+    
+    <img src="assets/images/illustration-sign-up-desktop.svg" alt="#">
+  </div>
   <div id="content-container">
     <div id="heading">
       <h1>Stay updated!</h1>
@@ -40,23 +42,18 @@
         <p>And much more!</p>
       </div>
     </div>
-    <form action="submit">
+    <form>
       <label for="email"><b>Email address</b></label><br>
       <div class="flex">
-        <input type="email" id="email" name="email" placeholder="email@company.com"> 
-        <button>Subscribe to monthly newsletter</button>
+        <input type="email" id="email" name="email" placeholder="email@company.com" required> 
+        <button id="sub-btn">Subscribe to monthly newsletter</button>
       </div>
     </form>
-  </div>
-  <div id="desktop-svg-cont">
-    <img src="assets/images/illustration-sign-up-desktop.svg" alt="#">
   </div>
 </main> 
 <!-- Sign-up form end -->
 <!-- Success message start -->
 <section id="success-container"></section>
-
-
   <!-- Success message end -->
   
   <div class="attribution">
