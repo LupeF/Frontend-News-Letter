@@ -21,7 +21,7 @@ body main {
 }
 body main #mobile-svg-cont img {
   width: 100%;
-  height: 260px;
+  height: 300px;
 }
 @media (min-width: 650px) {
   body main #mobile-svg-cont img {
