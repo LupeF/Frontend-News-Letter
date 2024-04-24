@@ -24,6 +24,12 @@ form{
             background-color: hsl(234, 29%, 20%);
             color: hsl(0, 0%, 100%);
             margin: 1rem 0;
+            transition: background-color .4s ease;
+            cursor: pointer;
+            &:hover{
+                background-color: orangered;
+                
+            }
         }
     }
 }
